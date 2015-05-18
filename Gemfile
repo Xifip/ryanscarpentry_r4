@@ -38,3 +38,7 @@ gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'mast
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :production do
+  gem 'fog'
+end
