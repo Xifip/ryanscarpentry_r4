@@ -78,6 +78,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  #Refinery::Core.
-  config.s3_backend = true
+  Refinery::Core.config.s3_backend = true
 end
