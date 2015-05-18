@@ -40,5 +40,5 @@ gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'mast
 # gem 'debugger', group: [:development, :test]
 
 group :production do
-  gem 'fog'
+  gem 'dragonfly-s3_data_store'
 end
