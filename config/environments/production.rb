@@ -78,5 +78,11 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  Refinery::Core.config.s3_backend = true
+  Refinery::Core.configure do |config|
+    config.s3_backend = true
+    config.s3_access_key_id = ENV["S3_KEY"]
+    config.s3_secret_access_key = ENV["S3_SECRET"]
+    config.s3_bucket_name = ENV["S3_BUCKET"]
+    config.s3_region =  ENV["S3_REGION"]
+  end
 end
