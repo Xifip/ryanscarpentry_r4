@@ -42,3 +42,7 @@ gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'mast
 group :production do
   gem 'dragonfly-s3_data_store'
 end
+
+gem "twitter-bootstrap-rails"
+
+gem "therubyracer"
