@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/refinery/refinerycms
-  revision: 29ab03669a0bdba34c789442df1402f6df06e929
+  revision: c80ade840dbbc4859e9e6979129b0d9448427fd5
   branch: master
   specs:
     refinerycms (3.0.0)
@@ -88,7 +88,7 @@ GEM
     coffee-script-source (1.9.1.1)
     decorators (2.0.1)
       railties (>= 4.0.0, < 5.0.0)
-    devise (3.5.1)
+    devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -105,7 +105,7 @@ GEM
     erubis (2.7.0)
     excon (0.45.3)
     execjs (2.5.2)
-    fog-aws (0.4.0)
+    fog-aws (0.2.2)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
@@ -117,9 +117,9 @@ GEM
       mime-types
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
-    fog-json (1.0.2)
+    fog-json (1.0.1)
       fog-core (~> 1.0)
-      multi_json (~> 1.10)
+      multi_json (~> 1.0)
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
@@ -140,13 +140,13 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
-    json (1.8.3)
+    json (1.8.2)
     libv8 (3.16.14.7)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.6.1)
+    mime-types (2.5)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.6.1)
     multi_json (1.11.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
