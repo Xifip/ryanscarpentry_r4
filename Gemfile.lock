@@ -1,3 +1,10 @@
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-jobs (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.0)
+
 GIT
   remote: https://github.com/refinery/refinerycms
   revision: c80ade840dbbc4859e9e6979129b0d9448427fd5
@@ -243,6 +250,7 @@ DEPENDENCIES
   rails (= 4.1.8)
   refinerycms!
   refinerycms-i18n
+  refinerycms-jobs!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

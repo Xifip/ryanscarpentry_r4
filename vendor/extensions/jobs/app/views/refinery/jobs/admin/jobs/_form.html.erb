@@ -1,0 +1,64 @@
+<%= form_for [refinery, :jobs_admin, @job] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @job,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "jobs/job" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :completed_on -%>
+    <%= f.date_select :completed_on -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_1_id,
+               :image => @job.photo_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_2_id,
+               :image => @job.photo_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo_3 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_3_id,
+               :image => @job.photo_3,
+               :toggle_image_display => false -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.jobs.admin.jobs.job'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @job.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Jobs::Admin::JobsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.jobs_admin_jobs_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_jobs_admin_job_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Jobs::Admin::JobsController.sortable? && ::Refinery::Jobs::Job.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.jobs_admin_jobs_path,
+                     t('.reorder', what:  "Jobs"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.jobs_admin_jobs_path,
+                      t('.reorder_done', what: "Jobs"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

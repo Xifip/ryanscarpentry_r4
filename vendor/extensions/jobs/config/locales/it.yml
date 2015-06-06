@@ -1,0 +1,32 @@
+it:
+  refinery:
+    plugins:
+      jobs:
+        title: Jobs
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: Aggiungi Nuovo Job
+            reorder: Riordina Jobs
+            reorder_done: Termina il Riordino di Jobs
+          records:
+            title: Jobs
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Jobs. Clicca "Aggiungi Nuovo Job" per aggiungere il tuo primo job.
+          job:
+            view_live_html: Guarda live questo job <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo job
+            delete: Rimuovi per sempre questo job
+      jobs:
+        show:
+          other: Altri Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        name: Name
+        description: Description
+        completed_on: Completed On
+        photo_1: Photo 1
+        photo_2: Photo 2
+        photo_3: Photo 3

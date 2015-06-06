@@ -1,0 +1,32 @@
+cs:
+  refinery:
+    plugins:
+      jobs:
+        title: Jobs
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: Přidat Job
+            reorder: Řadit Jobs
+            reorder_done: Konec řazení Jobs
+          records:
+            title: Jobs
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Jobs. Zvolte "Přidat Job" pro přidání prvního job.
+          job:
+            view_live_html: Zobrazit náhled job<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit job
+            delete: Smazat job
+      jobs:
+        show:
+          other: Další Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        name: Name
+        description: Description
+        completed_on: Completed On
+        photo_1: Photo 1
+        photo_2: Photo 2
+        photo_3: Photo 3

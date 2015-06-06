@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150518200424) do
+ActiveRecord::Schema.define(version: 20150606173612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,30 @@ ActiveRecord::Schema.define(version: 20150518200424) do
     t.datetime "updated_at"
     t.string   "image_title"
     t.string   "image_alt"
+  end
+
+  create_table "refinery_job_translations", force: true do |t|
+    t.integer  "refinery_job_id", null: false
+    t.string   "locale",          null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.text     "description"
+  end
+
+  add_index "refinery_job_translations", ["locale"], name: "index_refinery_job_translations_on_locale", using: :btree
+  add_index "refinery_job_translations", ["refinery_job_id"], name: "index_refinery_job_translations_on_refinery_job_id", using: :btree
+
+  create_table "refinery_jobs", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.date     "completed_on"
+    t.integer  "photo_1_id"
+    t.integer  "photo_2_id"
+    t.integer  "photo_3_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "refinery_page_part_translations", force: true do |t|

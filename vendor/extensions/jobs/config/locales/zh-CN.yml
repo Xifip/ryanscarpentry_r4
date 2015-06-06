@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      jobs:
+        title: Jobs
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: 建立新的 Job
+            reorder: 对 Jobs 重新排序
+            reorder_done: 对 Jobs 的重新排序结束
+          records:
+            title: Jobs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Jobs yet. Click "Add New Job" to add your first job.
+            no_items_yet: 目前没有 Jobs . 点击 "Add New Job" 创建一个job.
+          job:
+            view_live_html: 查看 job 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 job
+            delete: 永久删除 job
+      jobs:
+        show:
+          other: 其他 Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        name: Name
+        description: Description
+        completed_on: Completed On
+        photo_1: Photo 1
+        photo_2: Photo 2
+        photo_3: Photo 3

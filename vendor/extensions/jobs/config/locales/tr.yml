@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      jobs:
+        title: Jobs
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: Yeni Ekle Job
+            reorder: Tekrar sirala Jobs
+            reorder_done: Tekrar siralama tamamlandiJobs
+          records:
+            title: Jobs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Jobs yok henuz.  Tikla "Yeni Ekle Job" eklemek senin ilk job.
+          job:
+            view_live_html: Bunu canlu job goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle job
+            delete: Bunu Sil job sonsuza dek
+      jobs:
+        show:
+          other: Diger Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        name: Name
+        description: Description
+        completed_on: Completed On
+        photo_1: Photo 1
+        photo_2: Photo 2
+        photo_3: Photo 3
