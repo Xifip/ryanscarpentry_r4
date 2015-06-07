@@ -6,6 +6,14 @@ PATH
       refinerycms-core (~> 3.0.0)
 
 GIT
+  remote: https://github.com/bisscomm/refinerycms-image-slideshows
+  revision: 330ee0d6e4805203069993ece614969232e5a034
+  branch: master
+  specs:
+    refinerycms-image_slideshows (3.0.0)
+      refinerycms-core (~> 3.0.0)
+
+GIT
   remote: https://github.com/refinery/refinerycms
   revision: c80ade840dbbc4859e9e6979129b0d9448427fd5
   branch: master
@@ -187,9 +195,15 @@ GEM
     rdoc (4.2.0)
       json (~> 1.4)
     ref (1.0.5)
+    refinerycms-acts-as-indexed (2.0.1)
+      acts_as_indexed (~> 0.8.0)
+      decorators (~> 2.0.0)
+      refinerycms-core (~> 3.0.0)
     refinerycms-i18n (3.0.1)
       rails-i18n (~> 4.0.1)
       routing-filter (>= 0.4.0)
+    refinerycms-wymeditor (1.0.6)
+      refinerycms-core (~> 3.0, >= 3.0.0)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     routing-filter (0.4.0.1)
@@ -249,8 +263,11 @@ DEPENDENCIES
   pg
   rails (= 4.1.8)
   refinerycms!
+  refinerycms-acts-as-indexed
   refinerycms-i18n
+  refinerycms-image_slideshows!
   refinerycms-jobs!
+  refinerycms-wymeditor (~> 1.0.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

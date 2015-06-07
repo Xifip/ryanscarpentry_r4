@@ -11,10 +11,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150606173612) do
+ActiveRecord::Schema.define(version: 20150607074257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "refinery_image_slide_translations", force: true do |t|
+    t.integer  "refinery_image_slide_id", null: false
+    t.string   "locale",                  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.string   "caption"
+    t.string   "link_url"
+  end
+
+  add_index "refinery_image_slide_translations", ["locale"], name: "index_refinery_image_slide_translations_on_locale", using: :btree
+  add_index "refinery_image_slide_translations", ["refinery_image_slide_id"], name: "index_5ac35453397a11bd57cdf12fa8d7a3d98afd3e0e", using: :btree
+
+  create_table "refinery_image_slides", force: true do |t|
+    t.string   "title"
+    t.integer  "position"
+    t.integer  "image_slideshow_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "image_id"
+    t.string   "caption"
+    t.string   "link_url"
+  end
+
+  create_table "refinery_image_slideshows", force: true do |t|
+    t.string   "title"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "js_config"
+    t.string   "height"
+    t.string   "width"
+  end
 
   create_table "refinery_images", force: true do |t|
     t.string   "image_mime_type"
