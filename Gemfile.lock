@@ -6,6 +6,16 @@ PATH
       refinerycms-core (~> 3.0.0)
 
 GIT
+  remote: https://github.com/refinery/refinerycms-inquiries
+  revision: 192b4a91f4a0a5c7a8b60431f757aa8cfa8230ed
+  branch: master
+  specs:
+    refinerycms-inquiries (3.0.0)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-settings (~> 3.0.0)
+
+GIT
   remote: https://github.com/bisscomm/refinerycms-image-slideshows
   revision: 330ee0d6e4805203069993ece614969232e5a034
   branch: master
@@ -120,6 +130,7 @@ GEM
     erubis (2.7.0)
     excon (0.45.3)
     execjs (2.5.2)
+    filters_spam (0.5)
     fog-aws (0.2.2)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
@@ -202,6 +213,9 @@ GEM
     refinerycms-i18n (3.0.1)
       rails-i18n (~> 4.0.1)
       routing-filter (>= 0.4.0)
+    refinerycms-settings (3.0.0)
+      friendly_id (~> 5.0, >= 5.0.1)
+      refinerycms-core (~> 3.0, >= 3.0.0)
     refinerycms-wymeditor (1.0.6)
       refinerycms-core (~> 3.0, >= 3.0.0)
     responders (1.1.2)
@@ -266,6 +280,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed
   refinerycms-i18n
   refinerycms-image_slideshows!
+  refinerycms-inquiries!
   refinerycms-jobs!
   refinerycms-wymeditor (~> 1.0.6)
   sass-rails (~> 4.0.3)
