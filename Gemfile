@@ -47,7 +47,8 @@ group :production do
   gem 'dragonfly-s3_data_store'
 end
 
-gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass', '~> 3.2.0'
+#gem "twitter-bootstrap-rails"
 
 gem "therubyracer"
 

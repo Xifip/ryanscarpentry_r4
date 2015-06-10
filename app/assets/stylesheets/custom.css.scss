@@ -1,0 +1,24 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+#page{
+  margin-bottom: 100px;
+}
+
+footer p {
+  padding: 10px;
+}
+
+ul.i18n_toggle{
+  list-style-type: none;
+  li{
+    float: left;
+    padding: 5px;
+    }
+}
