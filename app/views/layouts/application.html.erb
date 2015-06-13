@@ -5,7 +5,11 @@
     <%= render "/refinery/javascripts" %>
     <%= render "/refinery/head" %>
   </head>
-  <body id="<%= canonical_id @page %>">
+  <% if controller.controller_name == "inquiries" %>
+    <body id="<%= canonical_id @page %>" data-no-turbolink="true">
+  <% else %>
+   <body id="<%= canonical_id @page %>" data-no-turbolink="false">
+  <% end %>
     <%= site_bar -%>
     <div id="page_container">
       <header id="header">

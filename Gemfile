@@ -55,3 +55,5 @@ gem "therubyracer"
 gem 'refinerycms-i18n'
 
 gem 'refinerycms-jobs', path: 'vendor/extensions'
+
+gem 'paloma'

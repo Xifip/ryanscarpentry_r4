@@ -1,9 +1,8 @@
 ready = ->
   #$('#carousel-example-generic').carousel()
   #$('#carousel-example-generic .item:first').addClass("active")
-  alert 'hw'
+
   initalise = ->
-    alert 'gm'
     myLatlng = new (google.maps.LatLng)(60.02582839999999, 18.013170899999977)
     mapProp =
       center: myLatlng
