@@ -5,6 +5,17 @@ html,
 body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
+  padding-top: 50px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+#logo .navbar-brand{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #page{

@@ -10,15 +10,15 @@
         </button>
         <div id="logo">
           <a class="navbar-brand" href="#">
-            <%= image_tag("https://s3-eu-west-1.amazonaws.com/ryanscarpentry/site_assets/logo_1.png", size: "60x22", :alt => "logo") %>
+            <%= image_tag("https://s3-eu-west-1.amazonaws.com/ryanscarpentry/site_assets/logo_1.png", size: "120x40", :alt => "logo") %>
           </a>
         </div>
       </div>
       <% if (locales ||= Refinery::I18n.frontend_locales).present? and locales.many? %>
-        <ul class="pull-left i18n_toggle">
+        <ul class="pull-right i18n_toggle">
           <% locales.each do | locale | %>
             <li<%= " class='selected'" if locale.to_s == local_assigns[:current_locale].to_s %>>
-              <%= link_to image_tag("https://s3-eu-west-1.amazonaws.com/ryanscarpentry/site_assets/" + "#{locale}.png", :size => "50x24"),
+              <%= link_to image_tag("https://s3-eu-west-1.amazonaws.com/ryanscarpentry/site_assets/" + "#{locale}.png", :size => "30x14"),
                           refinery.url_for(:locale => locale) %>
             </li>
           <% end %>
