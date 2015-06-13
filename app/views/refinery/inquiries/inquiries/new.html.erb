@@ -1,0 +1,23 @@
+<% content_for :body do %>
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <div class="row">
+        <span class="col-md-10 col-sm-12">
+          <h3>Contact details</h3>
+          <h4>Tel:&#160;(0046) 070 576 8090</h4>
+          <h4>Email:&#160;info@takochbygg.com</h4>
+        </span>
+      </div>
+      <h3 class="row">
+        <span class="col-md-10 col-sm-12">
+          <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
+        </span>
+      </h3>
+      <div class="inquiries row">
+        <%= render "/refinery/inquiries/inquiries/form", inquiry: @inquiry %>
+      </div>
+    </div>
+    <div id="googleMap" class="col-md-6 col-sm-12"></div>
+  </div>
+<% end %>
+<%= render "/refinery/content_page" %>
