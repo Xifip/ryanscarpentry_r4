@@ -2,6 +2,7 @@
 <%= render "/refinery/html_tag" %>
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <head>
+    <%= render "/refinery/javascripts" %>
     <%= render "/refinery/head" %>
   </head>
   <body id="<%= canonical_id @page %>">
@@ -17,6 +18,6 @@
         <%= render "/refinery/footer" -%>
       </footer>
     </div>
-    <%= render "/refinery/javascripts" %>
+
   </body>
 </html>
