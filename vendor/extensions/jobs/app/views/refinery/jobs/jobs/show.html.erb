@@ -1,57 +1,33 @@
-<% content_for :body_content_title do %>
-  <%= @job.name %>
-<% end %>
-
-<% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @job.name %>
-    </p>
+<section id="body_content">
+  <section id="body">
+    <div id="job">
+      <div class="row">
+        <div class="col-md-4 jobimages">
+          <div class="jobimages">
+            <%= image_fu @job.photo_1, "400x400", class: "img-responsive img-rounded" %>
+          </div>
+          <div class="jobimages">
+            <%= image_fu @job.photo_2, "400x400", class: "img-responsive img-rounded" %>
+          </div>
+          <div class="jobimages">
+            <%= image_fu @job.photo_3, "400x400", class: "img-responsive img-rounded" %>
+          </div>
+        </div>
+        <div class="col-md-8 jobtext">
+          <div class="row description">
+            <h1><%= @job.name.capitalize %></h1>
+            <h4>
+              <b>Completed On:</b> <%= @job.completed_on %>
+            </h4>
+          </div>
+          <div class="row description">
+            <%= raw @job.description %>
+          </div>
+          <div class="row">
+            <p class="back"><%= link_to "Back to Jobs", refinery.jobs_jobs_path %></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @job.description %>
-    </p>
-  </section>
-  <section>
-    <h1>Completed On</h1>
-    <p>
-      <%=raw @job.completed_on %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo 1</h1>
-    <p>
-      <%= image_fu @job.photo_1, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo 2</h1>
-    <p>
-      <%= image_fu @job.photo_2, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo 3</h1>
-    <p>
-      <%= image_fu @job.photo_3, nil %>
-    </p>
-  </section>
-<% end %>
-
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="jobs">
-      <% @jobs.each do |job| %>
-        <li>
-          <%= link_to job.name, refinery.jobs_job_path(job) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+</section>

@@ -22,3 +22,30 @@ ul.i18n_toggle{
     padding: 5px;
     }
 }
+
+#job {
+  .jobtext {
+    .row{ padding: 10px; }
+    .description{
+      color: #777;
+    }
+   }
+  .jobimages{
+    margin-top: 10px;
+  }
+}
+
+.jobthumbimage{
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+#jobs{
+
+  .image-align-left {
+    margin-right: 20px;
+  }
+  .image-align-right {
+    margin-left: 20px;
+  }
+}

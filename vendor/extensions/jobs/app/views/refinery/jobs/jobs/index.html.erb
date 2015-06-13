@@ -1,11 +1,14 @@
-<% content_for :body do %>
-  <ul id="jobs">
-    <% @jobs.each do |job| %>
-      <li>
-        <%= link_to job.name, refinery.jobs_job_path(job) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+<section id="body_content">
+  <section id="body">
+    <div id="jobs ">
+      <% @jobs.each do |job| %>
+      <div class="job row col-md-offset-2 col-md-8 col-sm-12">
+        <%= image_fu job.photo_1, "200x200", class: "jobthumbimage image-align-#{cycle("left", "right")}" %>
+        <h2><%= job.name.capitalize %></h2>
+        <span><%=raw job.description.truncate(150) %></span>
+        <span class="more_info"><%= link_to "More Information", refinery.jobs_job_path(job) %></span>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>
