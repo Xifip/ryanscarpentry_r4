@@ -47,13 +47,11 @@ group :production do
   gem 'dragonfly-s3_data_store'
 end
 
-gem 'bootstrap-sass', '~> 3.2.0'
-#gem "twitter-bootstrap-rails"
+#gem 'bootstrap-sass', '~> 3.2.0'
+gem "twitter-bootstrap-rails"
 
 gem "therubyracer"
 
 gem 'refinerycms-i18n'
 
 gem 'refinerycms-jobs', path: 'vendor/extensions'
-
-gem 'paloma'

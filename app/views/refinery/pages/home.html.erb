@@ -1,0 +1,72 @@
+<%# app/views/refinery/pages/home.html.erb%>
+<%# raw(@page.content_for(:banner)) %>
+<div class="row">
+  <div class="box">
+    <div class="col-lg-12 text-center">
+
+      <div id="carousel-example-generic" class="carousel slide" >
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.find_by_title('home_slideshow') %>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <% main_slideshow.image_slides.each do |image_slide| %>
+            <div class="item">
+              <%= image_tag image_slide.image.url, :class => 'img-responsive img-full', :size => '1140x530', :alt => image_slide.title, :title => image_slide.caption %>
+            </div>
+          <% end %>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+           <span class="control-left">
+                <i class="fa fa-angle-left fa-stack-2x"></i>
+            </span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="control-right" >
+            <i class="fa fa-angle-right fa-stack-2x" aria-hidden="true"></i>
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <h2 class="brand-before">
+          <small>Welcome to</small>
+      </h2>
+      <h1 class="brand-name"><%=Refinery::Core.site_name %> </h1>
+      <hr class="tagline-divider">
+      <h2>
+          <small>
+              <strong>Quality Building Carpentry</strong>
+          </small>
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <%= raw(@page.content_for(:body)) %>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">
+                <strong>Qualifications and skills</strong>
+            </h2>
+            <hr>
+            <%= raw(@page.content_for(:body)) %>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,3 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
 html,
 body {
   height: 100%;
@@ -34,6 +31,7 @@ ul.i18n_toggle{
     }
 }
 
+
 #job {
   .jobtext {
     .row{ padding: 10px; }
@@ -63,4 +61,18 @@ ul.i18n_toggle{
 
 #googleMap {
     height: 500px;
+}
+
+.carousel-control .control-left,
+.carousel-control .control-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .control-left {
+  left: 50%;
+}
+.carousel-control .control-right {
+  right: 50%;
 }
