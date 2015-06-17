@@ -1,13 +1,30 @@
 <section id="body_content">
   <section id="body">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header"><%= @page.title %>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/"><%= Refinery::Page.find_by(link_url: "/").title %></a>
+                </li>
+                <li class="active"><%= @page.title %></li>
+            </ol>
+        </div>
+    </div>
     <div id="jobs ">
       <% @jobs.each do |job| %>
-      <div class="job row col-md-offset-2 col-md-8 col-sm-12">
-        <%= image_fu job.photo_1, "200x200", class: "jobthumbimage image-align-#{cycle("left", "right")}" %>
-        <h2><%= job.name.capitalize %></h2>
-        <span><%=raw job.description.truncate(150) %></span>
-        <span class="more_info"><%= link_to "More Information", refinery.jobs_job_path(job) %></span>
-      </div>
+        <div class="row">
+            <div class="col-md-7">
+              <%= image_fu job.photo_1, "700x300", class: "img-responsive img-hover" %>
+            </div>
+            <div class="col-md-5">
+                <h3><%= job.name.capitalize %></h3>
+                <p><%=raw job.description.truncate(250) %></p>
+                <%= link_to "View Project", refinery.jobs_job_path(job), class: "btn btn-primary" %>
+            </div>
+        </div>
+        <hr>
       <% end %>
     </div>
   </section>
