@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
-  padding-top: 50px;
+  padding-top: 0px;
 }
 @media (max-width: 979px) {
   body {
@@ -40,6 +40,10 @@ ul.i18n_toggle{
     height: 500px;
 }
 
+#carousel-example-generic .carousel-inner .item{
+  height: 380px;
+}
+
 .carousel-control .control-left,
 .carousel-control .control-right {
   position: absolute;
@@ -52,4 +56,15 @@ ul.i18n_toggle{
 }
 .carousel-control .control-right {
   right: 50%;
+}
+
+.inquiries form input {
+  width: 100%;
+}
+
+footer nav .container div.navbar-text{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }

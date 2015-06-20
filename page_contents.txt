@@ -1,0 +1,128 @@
+Contact page
+body
+<p>Get in touch with us. Just use the form below and we'll get back to you as soon as we can.</p>
+side body
+<h3>Contact Details</h3>
+<p><i class="fa fa-phone"></i>
+  <abbr title="Phone">P</abbr>: (0046) 070 576 8090</p>
+<p><i class="fa fa-envelope-o"></i>
+  <abbr title="Email">E</abbr>: <a href="mailto:info@takochbygg.com">info@takochbygg.com</a>
+</p>
+<p><i class="fa fa-clock-o"></i>
+  <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+<ul class="list-unstyled list-inline list-social-icons">
+  <li>
+    <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+  </li>
+</ul>
+
+home page
+body
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header brand-name text-align-center">
+      Welcome to Lövåsens Hantverk
+    </h1>
+    <h2 class="text-align-center">
+        <small>
+            <strong class="text-align-center">Quality Building Carpentry</strong>
+        </small>
+    </h2>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><em class="fa fa-fw fa-check"></em> Bootstrap v3.2.0</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+        <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><em class="fa fa-fw fa-check"></em> Bootstrap v3.2.0</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+        <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><em class="fa fa-fw fa-check"></em> Bootstrap v3.2.0</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+        <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+qualifications
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header brand-name text-align-center">
+      Qualifications and skills
+    </h1>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><em class="fa fa-fw fa-check"></em> Bootstrap v3.2.0</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+        <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><em class="fa fa-fw fa-check"></em> Bootstrap v3.2.0</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+        <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4><em class="fa fa-fw fa-check"></em> Bootstrap v3.2.0</h4>
+      </div>
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+        <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+call to action
+<div class="well">
+  <div class="row">
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+    </div>
+    <div class="col-md-4">
+      <a class="btn btn-lg btn-default btn-block" href="/contact">Contact us</a>
+    </div>
+  </div>
+</div>
