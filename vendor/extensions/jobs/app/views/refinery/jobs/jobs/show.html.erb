@@ -2,8 +2,8 @@
   <section id="body">
     <div id="job">
       <div class="row">
-        <div class="col-md-8">
-          <div id="carousel-example-generic" class="carousel slide" >
+        <div class="col-md-7">
+          <div id="carousel-job" class="carousel slide" >
             <!-- Indicators -->
             <ol class="carousel-indicators hidden-xs">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -13,13 +13,13 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item">
-                <%= image_fu @job.photo_1, "750x500", class: "img-responsive img-rounded", :alt => @job.photo_1.alt, :title => @job.photo_1.title %>
+                <%= image_fu @job.photo_1, "700x300", class: "img-responsive img-rounded", :alt => @job.photo_1.alt, :title => @job.photo_1.title %>
               </div>
              <div class="item">
-                <%= image_fu @job.photo_2, "750x500", class: "img-responsive img-rounded", :alt => @job.photo_2.alt, :title => @job.photo_2.title %>
+                <%= image_fu @job.photo_2, "700x300", class: "img-responsive img-rounded", :alt => @job.photo_2.alt, :title => @job.photo_2.title %>
               </div>
              <div class="item">
-                <%= image_fu @job.photo_3, "750x500", class: "img-responsive img-rounded", :alt => @job.photo_3.alt, :title => @job.photo_3.title %>
+                <%= image_fu @job.photo_3, "700x300", class: "img-responsive img-rounded", :alt => @job.photo_3.alt, :title => @job.photo_3.title %>
               </div>
             </div>
 
@@ -37,7 +37,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 jobtext">
+        <div class="col-md-5 jobtext">
           <h3><%= @job.name.capitalize %></h3>
           <h4>
             <b>Completed On:</b> <%= @job.completed_on %>
